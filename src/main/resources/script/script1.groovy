@@ -13,7 +13,7 @@ def Message processData(Message message) {
     //Headers
     def headers = message.getHeaders();
     def value = headers.get("oldHeader");
-    message.setHeader("oldHeader", value + " modified");
+    message.setHeader("oldHeader", value + "_modified");
     message.setHeader("newHeader", "newHeader");
     //Properties
     def properties = message.getProperties();
